@@ -1,0 +1,17 @@
+# Set the Admin user language: zh_CN
+- name: set zabbix language to chinese and set email
+  local_action:
+     module: zabbix_myapi
+     login_user: 'Admin'
+     login_password: 'zabbix'
+     server_url: 'http://192.168.10.134/zabbix/api_jsonrpc.php'
+     set_user_lang: 'yes'
+
+# Set email
+- name: set zabbix language to chinese and set email
+  local_action:
+     module: zabbix_myapi
+     login_user: 'Admin'
+     login_password: 'zabbix'
+     server_url: 'http://192.168.10.134/zabbix/api_jsonrpc.php'
+     set_email: 'yes
